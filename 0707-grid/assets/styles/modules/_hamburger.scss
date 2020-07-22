@@ -1,0 +1,29 @@
+.header-hamburger,
+.hamburger-btn {
+  // @include border;
+}
+
+.header-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.75rem;
+  width: 72.3px;
+  position: absolute;
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+
+  .hamburger-btn {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}

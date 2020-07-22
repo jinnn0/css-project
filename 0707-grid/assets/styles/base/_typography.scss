@@ -1,0 +1,38 @@
+// IKEA Ireland
+h1 {
+  font-size: 1.5rem;
+
+  @media (min-width: 600px) {
+    font-size: 2.25rem;
+  }
+}
+
+// ideas and inspiration
+h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.44444;
+  color: $black;
+
+  @media (min-width: 900px) {
+    font-size: 1.375rem;
+    line-height: 1.45455;
+  }
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #111;
+}
+
+h4 {
+  font-size: 0.9rem;
+}
+
+p {
+  word-break: break-word;
+  line-height: 1.8rem;
+  color: $light-black;
+}

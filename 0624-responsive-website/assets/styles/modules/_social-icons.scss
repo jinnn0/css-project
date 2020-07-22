@@ -1,0 +1,25 @@
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  img {
+    display: block;
+    width: 14px;
+    margin: 15px auto;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 700px) {
+  .social-icons {
+    width: 100px;
+
+    img {
+      width: 20px;
+      margin: 0 auto 20px;
+    }
+  }
+}

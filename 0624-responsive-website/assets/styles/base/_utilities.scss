@@ -1,0 +1,142 @@
+/* usable section UI parts */
+.section,
+.section__content,
+.section__content__title,
+.section__content__text,
+.pink-box,
+.line {
+  // border: 1px solid black;
+}
+.section {
+  border: 1px solid transparent;
+  width: 100%;
+  min-width: 320px; // to prevent it from shrinking on screen less than 310px
+
+  .section__content {
+    width: 100%;
+
+    &__title,
+    &__text,
+    .pink-box {
+      margin-bottom: 1rem;
+    }
+
+    &__title {
+      line-height: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    &__text {
+      line-height: 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $content-text-color;
+    }
+
+    .reference-quote {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    .referee {
+      font-size: 0.8rem;
+      color: $qoute-text-color;
+      font-weight: 400;
+    }
+
+    .pink-box {
+      width: 15px;
+      height: 15px;
+      background-color: $primary-pink;
+      display: inline-block;
+    }
+  }
+
+  /* line - pink box, long line, short line */
+  .line {
+    line-height: 0.8rem;
+    margin: 2rem 0;
+  }
+
+  .line-1 {
+    width: 15px;
+    height: 15px;
+    background-color: $primary-pink;
+    display: inline-block;
+  }
+
+  .line-2 {
+    width: 110px;
+    height: 2px;
+    background-color: $line-long-color;
+    display: inline-block;
+  }
+
+  .line-3 {
+    width: 60px;
+    height: 2px;
+    background-color: $line-short-color;
+    display: inline-block;
+  }
+
+  /* primary button */
+  .primary-btn {
+    border: 2.5px solid $primary-btn-color;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $primary-text-color;
+    margin: 0.8rem 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 700px) {
+  .section {
+    .section__content {
+      max-width: 450px;
+
+      &__title {
+        line-height: 3.4rem;
+        font-size: 1.8rem;
+      }
+
+      &__text {
+        line-height: 1.4rem;
+        font-size: 1rem;
+      }
+
+      .reference-quote {
+        line-height: 2rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .referee {
+        font-size: 1rem;
+      }
+
+      .pink-box {
+        width: 15px;
+        height: 15px;
+        background-color: $primary-pink;
+        display: inline-block;
+      }
+    }
+
+    .line {
+      margin-top: 0;
+    }
+
+    .primary-btn {
+      margin: 2.2rem 0;
+    }
+  }
+}

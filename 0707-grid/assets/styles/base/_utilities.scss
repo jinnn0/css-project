@@ -1,0 +1,92 @@
+/* section margin */
+.section-margin-btoom-sm {
+  margin-bottom: 2.5rem;
+
+  @media (min-width: 600px) {
+    margin-bottom: 3.75rem;
+  }
+}
+
+.section-margin-btoom-md {
+  margin-bottom: 3.5rem;
+
+  @media (min-width: 600px) {
+    margin-bottom: 4.75rem;
+  }
+}
+
+/* section inner margin */
+.margin-bottom-xs {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.5rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 1.875rem;
+}
+
+/* button styles - hamburger, header */
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  // centering hover background
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .btn__icon-bg,
+  &:focus .btn__icon-bg {
+    background-color: rgba(223, 223, 223, 1);
+  }
+}
+
+.btn__icon {
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.btn__icon-bg {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(223, 223, 223, 0);
+  border-radius: 40px;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.15s ease-in-out;
+}
+
+/* primary button styles - main, footer */
+.primary-btn {
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  background-color: $primary-bth-color;
+  color: $black;
+  border-radius: 40px;
+  transition: all 0.12s ease-in-out;
+
+  &:hover {
+    background-color: $btn-hover-bg-color;
+  }
+}
+
+.primary-bth-large {
+  height: 3.4375rem;
+  padding: 0 2.5rem;
+}
+
+.primary-btn-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.primary-btn-change-country {
+  color: $primary-bth-light-text-color;
+  border: 1px solid $primary-btn-outline-color;
+}
